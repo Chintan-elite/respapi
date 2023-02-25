@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
 const PORT = 9000
-const dburl = "mongodb://127.0.0.1:27017/7nov";
+const dburl = "mongodb+srv://tops:tops@cluster0.t3ni3is.mongodb.net/myrestapi?retryWrites=true&w=majority";
 app.use(express.json())
 mongoose.connect(dburl).then(() => {
     console.log("Db Connected !!!");
